@@ -29,11 +29,16 @@ export default function HeroSection() {
           {/* OVERLAY CONTENT */}
           {/* the top section of herosection */}
           {/* Navbar */}
-          <nav className="flex w-full p-4 items-center lg:justify-center justify-between lg:gap-x-90 rounded-xs shadow-md bg-gradient-to-b from-gray-700/80 to-transparent">
+          <nav className="flex w-full p-4 lg:px-10 items-center lg:justify-center justify-between lg:gap-x-80 rounded-xs shadow-md bg-gradient-to-b from-gray-700/80 to-transparent">
             {/* navbar logo */}
             <div className="">
               {" "}
-              <Image src={"/fbicon.png"} alt="fb" width={28} height={28} />
+              <Image
+                src={"/logo-white.png"}
+                alt="logowhite"
+                width={70}
+                height={60}
+              />
             </div>
 
             {/* nav items */}

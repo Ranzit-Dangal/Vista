@@ -111,7 +111,7 @@ export default function Adventures() {
               <b className="text-2xl text-green-700">{item.title}</b>
               {/* difficulty and altitude */}
 
-              <span className="flex items-center gap-38 mt-2">
+              <span className="flex items-center justify-between mt-2">
                 <p className="text-xs text-slate-600">
                   Difficulty:
                   <span className="font-bold">&nbsp;Moderate</span>
@@ -123,12 +123,13 @@ export default function Adventures() {
               <hr className="w-full text-slate-300 my-2" />
               <li className="text-left text-sm">{item.description}</li>
               <hr className="w-full text-slate-300 my-2" />
+              {/* Price and Reviews */}
               <div className="flex items-center justify-between w-full">
-                <div className="flex flex-col items-start">
+                <div className="flex flex-col justify-between items-start">
                   <span className="text-slate-500 text-sm">
                     Price Starting from
                   </span>
-                  <a className="text-sm font-bold">$177</a>
+                  <span className="text-sm font-bold items-center">$177</span>
                 </div>
                 <div className="items-center">
                   <span className="text-xs items-start">Reviews</span>
