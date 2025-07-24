@@ -69,7 +69,7 @@ export default function Adventures() {
       <h1 className="font-bold text-3xl font-sans flex flex-1/2 p-10">
         Best Sellers
       </h1>
-      <div className="gap-6 grid grid-cols-1 sm:grid-cols-4 px-10 pb-10">
+      <div className="gap-6 grid grid-cols-1 lg:grid-cols-4 px-10 pb-10">
         {list.map((item, index) => (
           <Card
             key={index}

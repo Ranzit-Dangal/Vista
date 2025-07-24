@@ -61,7 +61,7 @@ export default function WhySection() {
         <Image src={"/line-white.png"} alt="" width={140} height={30} />
       </div>
       {/* Content */}
-      <div className="grid lg:grid-cols-4 py-2 px-16 gap-4">
+      <div className="grid lg:grid-cols-4 grid-cols-8 py-2 px-16 gap-4">
         {list.map((item, index) => (
           <div
             key={index}
@@ -75,7 +75,7 @@ export default function WhySection() {
       </div>
       {/* Button */}
       <div className="justify-center items-center w-full flex flex-col pt-10">
-        <button className="bg-green-900 px-6 py-3 rounded-md">
+        <button className="bg-[#006A4E] px-6 py-3 rounded-md hover:bg-green-700">
           <h1 className="text-sm">Find out more</h1>
         </button>
       </div>
