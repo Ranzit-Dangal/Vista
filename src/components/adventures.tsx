@@ -111,10 +111,10 @@ export default function Adventures() {
               <b className="text-2xl text-green-700">{item.title}</b>
               {/* difficulty and altitude */}
 
-              <div className="flex items-center justify-between mt-2">
-                <div className="flex text-xs text-slate-600">
-                  <span>Difficulty:</span>
-                  <span className="font-bold">&nbsp;Moderate</span>
+              <div className="flex items-center mt-2 justify-between w-full">
+                <div className="flex justify-between text-xs text-slate-600">
+                  <div>Difficulty:</div>
+                  <div className="font-bold">&nbsp;Moderate</div>
                 </div>
                 <div className="text-xs  text-slate-600">
                   Altitude:<span className="font-bold">4130m</span>
