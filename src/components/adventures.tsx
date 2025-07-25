@@ -107,32 +107,32 @@ export default function Adventures() {
                 </span>
               </div>
             </CardBody>
-            <CardFooter className="text-small justify-between flex flex-col items-start">
+            <CardFooter className="text-sm justify-between flex flex-col items-start">
               <b className="text-2xl text-green-700">{item.title}</b>
               {/* difficulty and altitude */}
 
-              <span className="flex items-center justify-between mt-2">
-                <p className="text-xs text-slate-600">
-                  Difficulty:
+              <div className="flex items-center justify-between mt-2">
+                <div className="flex text-xs text-slate-600">
+                  <span>Difficulty:</span>
                   <span className="font-bold">&nbsp;Moderate</span>
-                </p>
-                <p className="text-xs  text-slate-600">
+                </div>
+                <div className="text-xs  text-slate-600">
                   Altitude:<span className="font-bold">4130m</span>
-                </p>
-              </span>
+                </div>
+              </div>
               <hr className="w-full text-slate-300 my-2" />
               <li className="text-left text-sm">{item.description}</li>
               <hr className="w-full text-slate-300 my-2" />
               {/* Price and Reviews */}
               <div className="flex items-center justify-between w-full">
                 <div className="flex flex-col justify-between items-start">
-                  <span className="text-slate-500 text-sm">
+                  <div className="text-slate-500 text-sm">
                     Price Starting from
-                  </span>
+                  </div>
                   <span className="text-sm font-bold items-center">$177</span>
                 </div>
                 <div className="items-center">
-                  <span className="text-xs items-start">Reviews</span>
+                  <div className="text-xs items-start">Reviews</div>
                   {/* <Image
                     src={"/reviewstars.png"}
                     alt=""
