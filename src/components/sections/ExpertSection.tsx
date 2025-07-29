@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SpeakExperts() {
   return (
-    <div className="bg-[url('/worldmp.png')] w-full h-screen bg-center bg-no-repeat content-center ">
+    <div className="bg-[url('/worldmp.png')] w-full h-[500px] bg-center bg-no-repeat content-center ">
       <div className="">
         {/* TITLE */}
         <div className="flex flex-1 flex-col justify-center items-center p-5">
