@@ -23,7 +23,7 @@ export default function page() {
     },
     {
       image: "/experts.png",
-      title: "Community Empowerment",
+      title: "Community",
       description:
         "Collabration with local experts, climbers, and social workers to uplift mountain communities.",
     },
@@ -31,17 +31,22 @@ export default function page() {
   return (
     <div>
       {/* Background Image */}
-      <div className="bg-[url('/team-banner.jpg')] w-full h-[300px] bg-cover bg-bottom ">
+      <div className="bg-[url('/team-banner.jpg')] w-full h-[300px] bg-cover bg-bottom">
         {/* top section/ bg overlay */}
         <div className="flex flex-col flex-1 justify-center items-center pt-32 gap-y-4">
           <h1 className="text-4xl font-bold text-white">About Us</h1>
-          <p className="text-slate-100 text-sm">Home&gt;&gt;About Us</p>
+          <p className="text-slate-100 text-sm">
+            <b className="hover:underline hover:cursor-pointer hover:text-green-600">
+              Home
+            </b>
+            &gt;&gt;About Us
+          </p>
         </div>
       </div>
       {/* Middle Section */}
-      <div className="w-full flex p-16 gap-x-10">
+      <div className="container mx-auto w-full flex p-16 gap-x-10">
         {/* left */}
-        <div className="lg:w-2/5 hidden sm:block">
+        <div className="lg:w-2/5 hidden lg:block">
           <Image
             src={"/employees.jpg"}
             alt=""

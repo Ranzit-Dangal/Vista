@@ -49,6 +49,7 @@ export default function HeroSection() {
                 Learning Hubs
               </button>
               <Company />
+
               <button className="text-white font-semibold text-sm hover:text-green-500 ">
                 Contact
               </button>
@@ -63,12 +64,12 @@ export default function HeroSection() {
             </div>
           </nav>
           {/* the middle section of herosection */}
-          <div className="flex flex-col justify-center items-center text-center lg:h-[90vh] h-[60vh]">
+          <div className=" flex flex-col justify-center items-center text-center lg:h-[90vh] h-[60vh]">
             <h1 className="text-white font-extrabold lg:text-5xl text-4xl">
               Explore the Himalayas
             </h1>
             {/* Search Bar */}
-            <div className="flex items-center gap-2 text-sm rounded-md ring-[1.5px] ring-gray-300 px-2 py-1 lg:w-[900px] w-[360px] bg-transparent mt-16">
+            <div className="flex items-center gap-2 text-sm rounded-md ring-[1.5px] ring-gray-300 px-2 py-1 md:w-[700px] lg:w-[900px] w-[360px] bg-transparent mt-16">
               <Image src="/search.png" alt="" width={16} height={16} />
               <input
                 type="text"
