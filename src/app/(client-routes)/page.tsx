@@ -1,4 +1,3 @@
-import FooterSection from "@/components/sections/FooterSection";
 import HeroSection from "@/components/sections/HeroSection";
 import SellerSection from "@/components/sections/SellerSection";
 import WhySection from "@/components/sections/WhySection";
@@ -11,7 +10,6 @@ export default function Home() {
       <SellerSection />
       <WhySection />
       <ExpertSection />
-      <FooterSection />
     </div>
   );
 }

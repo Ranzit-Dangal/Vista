@@ -1,8 +1,5 @@
 import Image from "next/image";
-import Trips from "../trips";
-import COllections from "../collections";
-import Company from "../company";
-import { IoLogInOutline } from "react-icons/io5";
+import Navbar from "../navbar/navbar";
 
 export default function HeroSection() {
   return (
@@ -27,42 +24,7 @@ export default function HeroSection() {
         {/* Background Image */}
         <div className="bg-[url('/mountain.jpg')] grayscale-25 w-full h-screen bg-cover bg-bottom lg:px-20 lg:py-8">
           {/* OVERLAY CONTENT */}
-          {/* the top section of herosection */}
-          {/* Navbar */}
-          <nav className="flex w-full p-4 lg:px-10 items-center lg:justify-center justify-between lg:gap-x-80 rounded-xs shadow-md bg-gradient-to-b from-gray-700/80 to-transparent">
-            {/* navbar logo */}
-            <div className="">
-              {" "}
-              <Image
-                src={"/logo-white.png"}
-                alt="logowhite"
-                width={70}
-                height={60}
-              />
-            </div>
-
-            {/* nav items */}
-            <section className="hidden md:flex gap-2">
-              <Trips />
-              <COllections />
-              <button className="text-white font-semibold text-sm hover:text-green-500 ">
-                Learning Hubs
-              </button>
-              <Company />
-
-              <button className="text-white font-semibold text-sm hover:text-green-500 ">
-                Contact
-              </button>
-            </section>
-
-            {/* nav login button */}
-            <div className="items-center flex gap-1">
-              <IoLogInOutline className="size-5 text-green-500 " />
-              <button className="font-semibold text-sm text-green-400 items-center">
-                Login
-              </button>
-            </div>
-          </nav>
+          <Navbar />
           {/* the middle section of herosection */}
           <div className=" flex flex-col justify-center items-center text-center lg:h-[90vh] h-[60vh]">
             <h1 className="text-white font-extrabold lg:text-5xl text-4xl">
@@ -77,7 +39,7 @@ export default function HeroSection() {
                 className="w-[200px] p-2 bg-transparent outline-none"
               />
             </div>
-            <button className="mt-10 px-6 py-3 border-2 border-slate-400 rounded-full bg-[#006A4E] text-white">
+            <button className="mt-10 px-6 py-3 border-2 border-slate-400 rounded-full bg-[#006A4E] text-white hover:bg-green-900 hover:cursor-pointer">
               Download Brochure
             </button>
           </div>
